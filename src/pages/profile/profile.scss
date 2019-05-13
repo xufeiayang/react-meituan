@@ -30,7 +30,7 @@
       margin-left: .2rem;
       height: .8rem;
       @include flex;
-      border-bottom: 1px solid #f1f1f1;
+      //border-bottom: 1px solid #f1f1f1;
       .icon-profile{
         @include font(.30rem, #666);
       }
@@ -43,6 +43,20 @@
           @include font(18px, #777)
         }
       }
+    }
+    //解决移动端1px的问题
+    .myorder:before{
+      content: "";
+      pointer-events: none; /* 防止点击触发 */
+      box-sizing: border-box;
+      position: absolute;
+      width: 200%;
+      height: 200%;
+      left: 0;
+      top: 0;
+      border-bottom:1px solid #999;
+      transform: (scale(0.5));
+      transform-origin: 0 0;
     }
   }
   .phone-num {

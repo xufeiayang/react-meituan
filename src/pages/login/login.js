@@ -22,7 +22,6 @@ class Login extends Component {
     saveUserInfo: PropTypes.func.isRequired
   }
   componentDidMount () {
-    console.log(this);
   }
   verifyInput () {
     if ((/^1(3|4|5|7|8)\d{9}$/.test(this.state.mobile)) && this.state.verifyCode.length === 6 && typeof Number(this.state.verifyCode) === 'number') {
