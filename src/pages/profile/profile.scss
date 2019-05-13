@@ -1,0 +1,66 @@
+@import '../../style/mixin.scss';
+@import '../../assets/iconfont/iconfont.css';
+
+.profile-container{
+  p, span{
+    font-family: Helvetica Neue,Tahoma,Arial;
+  }
+  .profile-info{
+    @include flex;
+    flex-direction: column;
+    width: 100%;
+    height: 3rem;
+    background: url('http://pqpv6vybt.bkt.clouddn.com/profile.png');
+    .face{
+      @include wh(1.6, 1.6rem);
+      border-radius: 50%;
+      border: 4px solid #ffe699;
+    }
+    .name{
+      @include font(.32rem, #333)
+    }
+  }
+  .profile-list{
+    .my-img {
+      @include wh(.4rem, .4rem);
+    }
+    margin-top: .2rem;
+    background-color: $fc;
+    .myorder{
+      margin-left: .2rem;
+      height: .8rem;
+      @include flex;
+      border-bottom: 1px solid #f1f1f1;
+      .icon-profile{
+        @include font(.30rem, #666);
+      }
+      .myorder-text{
+        @include flex(space-between);
+        @include font(.28rem, #333);
+        width: 100%;
+        padding: .1rem .2rem;
+        .icon-arrow-right{
+          @include font(18px, #777)
+        }
+      }
+    }
+  }
+  .phone-num {
+    margin-top: .40rem;
+    padding: .2rem 0;
+    text-align: center;
+    background: white;
+    p {
+      color: #ffb000;
+      font-size: .28rem;
+    }
+    a {
+      background-color: transparent;
+    }
+  }
+  .time {
+    @include font(.24rem, #999);
+    text-align: center;
+    padding: .2rem 0;
+  }
+}

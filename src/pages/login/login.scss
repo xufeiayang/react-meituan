@@ -1,0 +1,96 @@
+@import '../../style/mixin.scss';
+
+.login-container{
+  .logo-wrap {
+    padding-top: 1.18rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    .logo {
+      @include wh(1.32rem, 1.32rem);
+      text-align: center;
+    }
+    .logo-name {
+      @include font(.37rem);
+      text-align: center;
+    }
+  }
+  .input-wrap {
+    font-size: 16px;
+    width: 100%;
+    padding: 1.2em;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    .phone {
+      @include flex(space-between);
+      border-bottom: 1px solid #e5e5e5;
+      padding-bottom: .6em;
+      input {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        border: 0;
+        min-width: 0;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        font-size: 1em;
+        outline: none;
+        background-color: inherit;
+      }
+      &-btn {
+        font-size: .8em;
+        color: #999;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: #dcdcdc;
+        border: 1px solid #dcdcdc;
+        padding: .2em .5em;
+        border-radius: .2em;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        cursor: pointer;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+      }
+    }
+    .mes-code {
+      margin-top: 1em;
+    }
+  }
+  button {
+    text-align: center;
+    color: #999;
+    background: #e5e5e5;
+    height: 2.8em;
+    line-height: 2.8em;
+    border-radius: .3em;
+    width: 100%;
+    display: block;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: .5rem;
+  }
+  .active {
+    color: #fff;
+    background: #ffd300;
+  }
+  .active-mes {
+    color: #ffd300!important;
+    border: 1px solid #ffd300!important;
+    background: 0!important;
+  }
+  .disable {
+    pointer-events: none;
+  }
+  .a-wrap {
+    @include flex;
+    margin-top: 2rem;
+    a {
+      font-size: .27rem;
+      color: #999;
+      text-decoration: underline;
+    }
+  }
+}

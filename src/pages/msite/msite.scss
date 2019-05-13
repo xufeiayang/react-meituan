@@ -1,0 +1,43 @@
+@import '../../style/mixin.scss';
+.msite {
+  margin: 1rem 0;
+  .title-wrap {
+    @include flex;
+    flex-wrap: wrap;
+    .title {
+      width: 20vw;
+      margin-top: .3rem;
+      .item {
+        @include flex;
+      }
+      &-img {
+        @include wh(.88rem, .88rem);
+      }
+      &-name {
+        @include flex;
+        color: #333;
+        font-size: .22rem;
+        margin-top: .1rem;
+      }
+    }
+  }
+  .nearby {
+    font-size: .34rem;
+    @include flex;
+    margin: .2rem 0;
+  }
+  .filter {
+    @include flex;
+    border: 1px solid #ccc;
+    border-left: 0;
+    border-right: 0;
+    span {
+      flex: 1;
+      font-size: .28rem;
+      padding: .15rem;
+      text-align: center;
+      color: #333;
+    }
+  }
+}
+

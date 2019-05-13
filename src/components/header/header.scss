@@ -1,0 +1,42 @@
+@import '../../assets/iconfont/iconfont.css';
+@import '../../style/mixin.scss';
+.header-container{
+  position: fixed;
+  background-color: #000;
+  z-index: 101;
+  left: 0;
+  top: 0;
+  font-weight: bold!important;
+  @include flex(space-between);
+  @include wh(100%, 1rem);
+  .location {
+    @include flex;
+    width: 40vw;
+  }
+  .locate {
+    line-height: .4rem;
+    width: 20vw;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .font {
+    @include font(.32rem, #fff)
+  }
+  .search-icon {
+    @include font(.30rem);
+    line-height: .3rem;
+    &:first-child {
+      margin-right: .1rem;
+    }
+  }
+  .search {
+    @include flex(flex-start);
+    background-color: rgb(235, 235, 228);
+    border-radius: .3rem;
+    width: 60vw;
+    height: .6rem;
+    margin-right: .1rem;
+    padding: 0 0.3rem;
+  }
+}

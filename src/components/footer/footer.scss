@@ -1,0 +1,42 @@
+@import '../../style/mixin.scss';
+@import '../../assets/iconfont/iconfont.css';
+
+
+.footer-container{
+  background-color: #fff;
+  position: fixed;
+  z-index: 101;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  @include wh(100%, 1rem);
+  display: flex;
+  box-shadow: 0 -0.026667rem 0.053333rem rgba(0,0,0,.1);
+  .guide-item {
+    flex: 1;
+    @include flex;
+    text-align: center;
+    flex-direction: column;
+    .icon {
+      @include font(.4rem, #666);
+    }
+    .icon-home {
+      margin-bottom: .1rem;
+    }
+    span{
+      @include font(.24rem, #666)
+    }
+  }
+}
+
+.active{
+  color: $yellow;
+  font-size: 25px;
+  .icon-style{
+    color: $yellow!important;
+    font-weight: bold;
+  }
+  span{
+    color: $yellow!important;
+  }
+}

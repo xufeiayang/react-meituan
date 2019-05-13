@@ -1,0 +1,54 @@
+@import '../../style/mixin.scss';
+@import '../../assets/iconfont/iconfont.css';
+.shoplist-container{
+  margin-bottom: .5rem;
+  transition:all 1s;
+  animation:bounceIn .6s;
+  width: 100%;
+  background: #fff;
+}
+.font-l {
+  @include font(.22rem, #333);
+}
+.ml-20 {
+  margin-left: .1rem;
+}
+.shop-item{
+  padding: 0.3rem 0.3rem;
+  display: flex;
+  img{
+    @include wh(1.68rem, 1.26rem);
+    display: block;
+  }
+  .right{
+    margin-left: .4rem;
+    width: calc(100% - 1.68rem);
+    .name {
+      font-size: .32rem;
+      color: #333;
+      margin-bottom: .1rem;
+    }
+    .star-num{
+      @include flex(left);
+      .icon-wuxing{
+        transform: scale(0.9);
+        color: $yellow;
+        font-size: 0.03rem;
+      }
+    }
+    .space-between {
+      @include flex(space-between, center);
+      .delivery-img {
+        @include wh(.94rem, .3rem);
+        float: right;
+      }
+    }
+    .dis-img {
+      @include wh(.3rem, .3rem);
+    }
+    .discount {
+      margin-top: .1rem;
+      display: flex;
+    }
+  }
+}

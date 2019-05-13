@@ -1,0 +1,72 @@
+@import '../../style/mixin.scss';
+
+.order-wrap {
+  font-size: .32rem;
+  .ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .scroller {
+    overflow-x: hidden;
+    overflow-y: auto;
+    .order {
+      background-color: #fff;
+      padding: 0.2rem 0;
+      margin-bottom: .2rem;
+      .item {
+        margin-left: .3rem;
+        .border-b {
+          border-bottom: 2px solid #f5f5f5;
+        }
+        .img-name {
+          @include flex(space-between);
+          padding-bottom: .1rem;
+          padding-right: .3rem;
+          >div:first-child {
+            @include flex;
+          }
+          .img-icon {
+            @include wh(.7rem, .7rem);
+            border-radius: .35rem;
+          }
+          .title-name {
+            font-size: 0.36rem;
+            @extend .ellipsis;
+            width: 3rem;
+            margin-left: .25rem;
+          }
+        }
+        .flex-space {
+          @include flex(space-between);
+          padding: .1rem 0.3rem 0.1rem 0;
+          font-size: .28rem;
+          .food-info {
+            @extend .ellipsis;
+            width: 4rem;
+          }
+        }
+       .buttons {
+         display: flex;
+         div:first-child {
+           border-radius: 3px;
+           line-height: .54rem;
+           color: #333;
+           padding: 0 10px;
+           border: 1px solid #ddd;
+         }
+         div:last-child {
+           color: #333;
+           line-height: .54rem;
+           margin-left: .2rem;
+           border: solid 1px #FFD161;
+           padding: 0 10px;
+           margin-right: .14rem;
+           border-radius: 3px;
+           background-color: #FFD161;
+         }
+       }
+      }
+    }
+  }
+}
