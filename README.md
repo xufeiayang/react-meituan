@@ -13,12 +13,12 @@ react4 + react-redux + react-router + es6 + axios + sass + webpack + antd
 ```
   git clone git@github.com:xufeiayang/react-meituan.git
   cd react-meituan
-  npm install 
+  npm install
   npm start
 ```
 
 
 # 运行效果
-<img src="http://pqpv6vybt.bkt.clouddn.com/demo1.png" width="325" height="620"/> &#160;&#160;<img src="http://pqpv6vybt.bkt.clouddn.com/demo2.png" width="325" height="620"/> &#160;&#160;
-<img src="http://pqpv6vybt.bkt.clouddn.com/demo3.png" width="325" height="620"/> &#160;&#160;<img src="http://pqpv6vybt.bkt.clouddn.com/demo4.png" width="325" height="620"/> &#160;&#160;
-<img src="http://pqpv6vybt.bkt.clouddn.com/demo5.png" width="325" height="620"/> &#160;&#160;
+<img src="https://raw.githubusercontent.com/xufeiayang/images/master/img/demo1.png" width="325" height="620"/> &#160;&#160;<img src="https://raw.githubusercontent.com/xufeiayang/images/master/img/demo2.png" width="325" height="620"/> &#160;&#160;
+<img src="https://raw.githubusercontent.com/xufeiayang/images/master/img/demo3.png" width="325" height="620"/> &#160;&#160;<img src="https://raw.githubusercontent.com/xufeiayang/images/master/img/demo4.png" width="325" height="620"/> &#160;&#160;
+<img src="https://raw.githubusercontent.com/xufeiayang/images/master/img/demo5.png" width="325" height="620"/> &#160;&#160;
