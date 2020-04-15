@@ -3,7 +3,7 @@
 # 前言
 该项目是美团外卖, 目前开发了首页，订单页，登录，购物车，我的等,算一个比较完整的项目
 # 技术栈
-react4 + react-redux + react-router + es6 + axios + sass + webpack + antd
+react16 + react-redux + react-router + es6 + axios + sass + webpack + antd
 # 说明
 > 觉得对你有帮助,请点右上角的`Star`支持一下</br>
 > 推荐一下我的另一个项目“四种方式实现前端模块化” [点这里](https://github.com/xufeiayang/modal)
